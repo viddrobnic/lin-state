@@ -1,7 +1,7 @@
-use guard::macros::Resource;
+use lin_state::macros::Resource;
 
 struct A;
-impl guard::Resource for A {
+impl lin_state::Resource for A {
     unsafe fn clone_state(&self) -> Self {
         A
     }

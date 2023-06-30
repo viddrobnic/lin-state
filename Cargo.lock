@@ -3,14 +3,14 @@
 version = 3
 
 [[package]]
-name = "guard"
+name = "lin-state"
 version = "0.1.0"
 dependencies = [
- "macros",
+ "lin-state-macros",
 ]
 
 [[package]]
-name = "macros"
+name = "lin-state-macros"
 version = "0.1.0"
 dependencies = [
  "proc-macro2",

@@ -4,4 +4,4 @@ pub use resource::*;
 
 #[cfg(feature = "macros")]
 #[doc(hidden)]
-pub use macros;
+pub use lin_state_macros as macros;

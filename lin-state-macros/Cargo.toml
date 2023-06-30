@@ -1,5 +1,5 @@
 [package]
-name = "macros"
+name = "lin-state-macros"
 description = "TODO"
 version.workspace = true
 license.workspace = true

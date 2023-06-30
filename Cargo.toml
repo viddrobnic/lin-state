@@ -1,5 +1,5 @@
 [workspace]
-members = [".", "macros"]
+members = [".", "lin-state-macros"]
 
 [workspace.package]
 version = "0.1.0"
@@ -10,7 +10,7 @@ homepage = ""
 authors = ["Vid Drobnič <vid@zerodays.dev>"]
 
 [package]
-name = "guard"
+name = "lin-state"
 readme = "README.md"
 description = "TODO"
 version.workspace = true
@@ -21,7 +21,7 @@ repository.workspace = true
 
 [features]
 default = ["macros"]
-macros = ["dep:macros"]
+macros = ["dep:lin-state-macros"]
 
 [dependencies]
-macros = { path = "macros", optional = true }
+lin-state-macros = { path = "lin-state-macros", optional = true }
