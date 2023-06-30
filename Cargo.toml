@@ -2,17 +2,17 @@
 members = [".", "lin-state-macros"]
 
 [workspace.package]
-version = "0.1.0"
+version = "0.0.1"
 license = "MIT"
 edition = "2021"
-repository = ""
-homepage = ""
+repository = "https://github.com/viddrobnic/lin-state"
+homepage = "https://github.com/viddrobnic/lin-state"
 authors = ["Vid Drobnič <vid@zerodays.dev>"]
 
 [package]
 name = "lin-state"
 readme = "README.md"
-description = "TODO"
+description = "Writing state machine in a linear way. This library is part of a larger project, available at the homepage of the library."
 version.workspace = true
 license.workspace = true
 edition.workspace = true
