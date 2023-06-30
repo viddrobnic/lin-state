@@ -22,7 +22,7 @@ pub fn derive_resource(input: TokenStream) -> TokenStream {
 
     let expanded = quote! {
         // The generated impl.
-        impl #impl_generics guard::resource::Resource for #name #ty_generics #where_clause {
+        impl #impl_generics guard::Resource for #name #ty_generics #where_clause {
             unsafe fn clone_state(&self) -> Self {
                 #cloned_state
             }
@@ -40,9 +40,7 @@ pub fn derive_resource(input: TokenStream) -> TokenStream {
 fn add_trait_bounds(mut generics: Generics) -> Generics {
     for param in &mut generics.params {
         if let GenericParam::Type(ref mut type_param) = *param {
-            type_param
-                .bounds
-                .push(parse_quote!(guard::resource::Resource));
+            type_param.bounds.push(parse_quote!(guard::Resource));
         }
     }
     generics

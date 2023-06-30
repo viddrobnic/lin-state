@@ -1,7 +1,7 @@
 use guard::macros::Resource;
 
 struct A;
-impl guard::resource::Resource for A {
+impl guard::Resource for A {
     unsafe fn clone_state(&self) -> Self {
         A
     }
@@ -10,7 +10,7 @@ impl guard::resource::Resource for A {
 }
 
 #[derive(Resource)]
-struct C (A, A);
+struct C(A, A);
 
 fn main() {
     println!("dober dan");

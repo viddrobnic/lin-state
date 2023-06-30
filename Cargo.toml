@@ -1,13 +1,27 @@
+[workspace]
+members = [".", "macros"]
+
+[workspace.package]
+version = "0.1.0"
+license = "MIT"
+edition = "2021"
+repository = ""
+homepage = ""
+authors = ["Vid Drobnič <vid@zerodays.dev>"]
+
 [package]
 name = "guard"
-version = "0.1.0"
-edition = "2021"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
-[dependencies]
-macros = { path = "macros", optional = true }
+readme = "README.md"
+description = "TODO"
+version.workspace = true
+license.workspace = true
+edition.workspace = true
+authors.workspace = true
+repository.workspace = true
 
 [features]
 default = ["macros"]
 macros = ["dep:macros"]
+
+[dependencies]
+macros = { path = "macros", optional = true }

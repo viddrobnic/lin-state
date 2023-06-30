@@ -1,4 +1,6 @@
-pub mod resource;
+mod resource;
+
+pub use resource::*;
 
 #[cfg(feature = "macros")]
 #[doc(hidden)]
