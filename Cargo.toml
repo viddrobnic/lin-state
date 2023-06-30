@@ -27,9 +27,5 @@ macros = ["dep:lin-state-macros"]
 tokio = ["dep:tokio"]
 
 [dependencies]
-lin-state-macros = { path = "lin-state-macros", optional = true }
-tokio = { version = "1.29.0", features = [
-    "sync",
-    "rt",
-    "time",
-], optional = true }
+lin-state-macros = { version = "0.0.1", path = "lin-state-macros", optional = true }
+tokio = { version = "1.29", features = ["sync", "rt", "time"], optional = true }
